@@ -1,0 +1,42 @@
+extends layout
+
+block content
+          h1.text-center=title
+
+          p.text-center Bienvenidos a #{title}pedia
+          div.container
+                div.insertForm
+                  form(action='/estadio', method="POST")
+                      .form-group
+                        label(for='nombreEstadio') Nombre del estadio:
+                        input#nombreEstadio.form-control(type='text', placeholder='Camp Nou')
+                      .form-group(method="DELETE", action='')
+                        label(for='ubicacionEstadio') Ubicacion:
+                        input#ubicacionEstadio.form-control(type='text', placeholder='Barcelona, España')
+                      .form-group
+                        label(for='numAsientos') Numero de asientos:
+                        input#numAsientos.form-control(type='text', placeholder='75000')
+                      .form-group
+                        label(for='fechaConst') Fecha de construcción:
+                        input#numAsientos.form-control(type='text', placeholder='23 de noviembre 1957 ')
+                      .form-group
+                        label(for='equipo') Equipo:
+                        input#equipo.form-control(type='text', placeholder='F.C. Barcelona')
+                        hr
+                        button.btn.btn-dark Insertar Estadio
+                div.tabla
+                  table.table.table-dark
+                    thead
+                      tr
+                        th(scope='col') Nombre Estadio
+                        th(scope='col') Ubicacion
+                        th(scope='col') Numero de Asientos
+                        th(scope='col') Fecha de construccion
+                        th(scope='col') Equipo
+                        th(scope='col') operacion
+
+
+
+
+
+

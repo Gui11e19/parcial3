@@ -1,0 +1,8 @@
+
+div.container{
+    display: grid;
+    background-image: url(../public/images/fondo.jpg);
+    background-repeat:   no-repeat;
+}
+
+
